@@ -34,7 +34,7 @@ public class LoginActivity extends Activity {
 		setSignUpListener();
 		setLoginListener();
 
-		Parse.initialize(getApplicationContext(), );
+		//Parse.initialize(getApplicationContext(), );
 
 	}
 
