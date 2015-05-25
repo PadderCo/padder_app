@@ -2,5 +2,8 @@
 <resources>
 
 	<color name="white">#ffffff</color>
+	<color name="padder_green">#22C400</color>
+	<color name="padder_blue">#00947F</color>
+	<color name="padder_yellow">#9EDE00</color>
 
 </resources>
