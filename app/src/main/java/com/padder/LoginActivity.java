@@ -35,6 +35,7 @@ public class LoginActivity extends Activity {
 		setLoginListener();
 
 		//Parse.initialize(getApplicationContext(), );
+		//chauncey is a fuccboi
 
 	}
 
