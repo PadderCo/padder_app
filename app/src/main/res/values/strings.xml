@@ -2,6 +2,7 @@
 
 	<string name="app_name">Padder</string>
 
+	<string name="login_activity_title">LoginActivity</string>
 	<string name="login_title">Sign up or login to find your dream pad</string>
 	<string name="login_username">Username</string>
 	<string name="login_password">Password</string>
@@ -10,7 +11,6 @@
 
 	<string name="title_activity_home">HomeActivity</string>
 
-	<string name="title_activity_title">TitleActivity</string>
 	<string name="title_loading">Loading ... please wait</string>
 
 </resources>
