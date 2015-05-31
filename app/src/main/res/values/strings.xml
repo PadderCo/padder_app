@@ -9,7 +9,7 @@
 	<string name="login_signup_button">Sign Up</string>
 	<string name="login_login_button">Login</string>
 
-	<string name="title_activity_home">HomeActivity</string>
+	<string name="home_activity_title">HomeActivity</string>
 
 	<string name="title_loading">Loading ... please wait</string>
 

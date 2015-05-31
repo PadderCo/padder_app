@@ -17,7 +17,7 @@
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:label="@string/title_activity_home" >
+            android:label="@string/home_activity_title" >
         </activity>
         <activity
             android:name=".TitleActivity"
