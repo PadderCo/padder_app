@@ -32,7 +32,7 @@ public class TitleActivity extends Activity {
 			@Override
 			public void onAnimationEnd(Animation animation) {
 
-				Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+				Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
 				startActivity(intent);
 
 			}
