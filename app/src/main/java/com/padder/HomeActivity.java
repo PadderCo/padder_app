@@ -1,20 +1,17 @@
 package com.padder;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class HomeActivity extends Activity {
 
-	private LayoutInflater layoutInflater;
-
-	private ViewGroup coreLayout;
+	private ViewGroup content;
+	private TextView profileTab;
+	private ViewGroup profilePage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +19,12 @@ public class HomeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-		coreLayout = (ViewGroup) findViewById(R.id.home_layout);
-		layoutInflater = getLayoutInflater();
+		content = (ViewGroup) findViewById(R.id.home_content);
+		profileTab = (TextView) findViewById(R.id.home_profile_tab);
+
+		getLayoutInflater().inflate(R.layout.activity_login, content);
+		profilePage = (ViewGroup) findViewById(R.id.login_layout);
+		profilePage.setVisibility(View.GONE);
 
 		setHomeListener();
 
@@ -31,15 +32,12 @@ public class HomeActivity extends Activity {
 
 	private void setHomeListener() {
 
-		final TextView profileButton = (TextView) findViewById(R.id.home_profile_button);
-
-		profileButton.setOnClickListener(new View.OnClickListener() {
+		profileTab.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 
-				ViewGroup content = (ViewGroup) findViewById(R.id.home_content);
-				layoutInflater.inflate(R.layout.activity_login, content);
+				profilePage.setVisibility(View.VISIBLE);
 
 			}
 
